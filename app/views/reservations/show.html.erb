@@ -1,12 +1,12 @@
 
-<div class="text-center letter">
-  <h1 id="reservation-title">Your reservation for <%= @reservation.property.name %></h1>
-  <h2>You have demanded a reservation going from the:</h2>
+<div class="text-center castlevania-form reservation-thanks">
+  <h1 id="reservation-title">Your reservation for <strong><%= @reservation.property.name %></strong></h1>
+  <h4>You have demanded a reservation going from the:</h4>
 
   <p class="dates"> <%= @reservation.date_from %> </p>
-  <p>Until the:</p>
+  <h4>until the:</h4>
   <p class="dates"> <%=  @reservation.date_to %> </p>
-  <p>Thanks you for reserving with Castlevania</p>
+  <h4>Thank you for reserving with Castlevania</h4>
 </div>
 
 
@@ -14,8 +14,8 @@
 <div class="links">
   <tr>
     <% if policy(@reservation).edit? %>
-    <td><%= link_to "Change my reservation",  edit_property_reservation_path([ @property, @reservation ]) %> |</td>
-    <td><%= link_to 'Destroy', [ @reservation.property, @reservation ], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to "Change my reservation",  edit_property_reservation_path([ @property, @reservation ]), class: :link %> |</td>
+    <td><%= link_to 'Destroy', [ @reservation.property, @reservation ], method: :delete, data: { confirm: 'Are you sure?' }, class: :link %></td>
     <% end %>
   </tr>
 </div>
