@@ -1,18 +1,25 @@
-<%= simple_form_for @property do |f| %>
-<% if property.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(property.errors.count, "error") %> prohibited this property from being saved:</h2>
+<div class="castlevania-form">
+  <%= simple_form_for @property do |f| %>
+    <% if property.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(property.errors.count, "error") %> prohibited this property from being saved:</h2>
 
-      <ul>
-        <% property.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
+        <ul>
+          <% property.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%= f.input :name, class: 'form-labels' %>
+    <%= f.input :address, class: 'form-labels' %>
+    <%= f.input :price, class: 'form-labels' %>
+    <label class="btn btn-primary btn-file">
+      Modify the photos ❤️
+      <span style="display:none;">
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+      </span>
+    </label>
+    <%= f.submit :class => 'btn btn-primary btn-lg btn-block mb-3' %>
   <% end %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :price %>
-  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-  <%= f.submit %>
-<% end %>
+</div>

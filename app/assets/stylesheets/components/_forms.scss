@@ -9,7 +9,8 @@
   padding: 25px 40px;
   text-align: center;
   color: #c15522;
-  margin: 100px auto;
+  margin: 60px auto;
+  font-size: 18px;
 }
 
 .form-control {
@@ -69,6 +70,18 @@ input.btn-block[type="submit"] {
   border: 1px solid #ad410e;
   background-color: white;
   font-size: large;
+}
+
+// Edit Castle titel
+.castle-edit-title {
+  color: #c15522;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: italic;
+}
+
+.form-labels {
+  font-size: 22px;
 }
 
 
