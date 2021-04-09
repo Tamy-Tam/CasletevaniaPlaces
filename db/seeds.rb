@@ -23,6 +23,12 @@ puts 'Creating 5 fake users...'
 end
 puts 'Finished!'
 
+#Users -> usable?
+puts "Creating User Anna"
+usertam = User.new(name: "Anna", email:"myuseremail@gmail.com", password: "123456")
+usertam.save!
+puts "UserTam created!"
+
 
 #FAKING CASTLES
 
@@ -34,7 +40,7 @@ user1 = User.last
     address: Faker::Address.full_address,
     price: Faker::Number.number(digits: 5),
     photo: "https://picsum.photos/1400/500",
-    user_id: user1.id
+    user_id: usertam.id
   )
  properties.save!
 end
