@@ -17,7 +17,7 @@
   <% end %>
 
   <% unless @property.reservations.empty? %>
-    <tr>| <%= link_to 'Show my resa', property_reservation_path(@property, @property.reservations.where(user: current_user).first), class: :link %></tr>
+    <tr>| <%= link_to 'Show my Reservation', property_reservation_path(@property, @property.reservations.where(user: current_user).first), class: :link %></tr>
   <% end  %>
 
   <tr>
