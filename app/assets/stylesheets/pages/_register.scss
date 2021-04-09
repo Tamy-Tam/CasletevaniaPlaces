@@ -1,0 +1,76 @@
+// var nice-orange = #e67e22, #f07338 #c15522 #f07338cc;
+
+// Sign UP & Register Form
+.castlevania-form {
+  min-width: 30vw !important;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 25px 40px;
+  text-align: center;
+  color: #c15522;
+  margin: 100px auto;
+}
+
+.form-control {
+  background-color: #f0733833;
+  border-color: #c15522;
+}
+
+// Sign In button
+.btn-lg {
+  background-color: #c15522f7;
+  cursor: pointer;
+  border: 1px solid #ad410e;
+  border-radius: 25px;
+  width: 170px;
+  margin: 30px auto;
+}
+
+.btn-lg:hover {
+  background-color: #ad410e;
+  border: 1px solid #ad410e;
+  font-size: x-large;
+}
+
+  // width of login button
+input.btn-block[type="submit"] {
+  width: 50%;
+}
+
+// 6 charcters minimum
+.form-text.text-muted {
+  color: #c15522 !important;
+}
+
+// Links to Log In or Register
+.castlevania-form > a {
+  color: #c15522;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.castlevania-form > a:hover {
+  color: #ad410e;
+  font-size: larger;
+}
+
+// Adding a property form
+.form-control-file {
+  font-style: italic;
+}
+
+.btn-file {
+  background-color: #c15522f7;
+  border-radius: 5px;
+  border: 1px solid #ad410e;
+}
+
+.btn-file:hover {
+  background-color: #ad410e;
+  border: 1px solid #ad410e;
+  font-size: large;
+}
+
+
+

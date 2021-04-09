@@ -1,0 +1,20 @@
+<div class="castlevania-form">
+  <h1>Add one of your Properties</h1>
+
+  <%= simple_form_for @property do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :price %>
+
+    <label class="btn btn-primary btn-file">
+      Add some photos ❤️
+      <span style="display:none;">
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+      </span>
+    </label>
+    <%= f.submit :class => 'btn btn-primary btn-lg btn-block mb-3' %>
+  <% end %>
+</div>
+
+
+

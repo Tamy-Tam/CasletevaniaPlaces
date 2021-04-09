@@ -1,0 +1,26 @@
+
+<div class="text-center letter">
+  <h1 id="reservation-title">Your reservation for <%= @reservation.property.name %></h1>
+  <h2>You have demanded a reservation going from the:</h2>
+
+  <p class="dates"> <%= @reservation.date_from %> </p>
+  <p>Until the:</p>
+  <p class="dates"> <%=  @reservation.date_to %> </p>
+  <p>Thanks you for reserving with Castlevania</p>
+</div>
+
+
+
+<div class="links">
+  <tr>
+    <% if policy(@reservation).edit? %>
+    <td><%= link_to "Change my reservation",  edit_property_reservation_path([ @property, @reservation ]) %> |</td>
+    <td><%= link_to 'Destroy', [ @reservation.property, @reservation ], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% end %>
+  </tr>
+</div>
+
+<div class="back-to">
+  <%= image_tag("back.png")%>
+  <%= link_to "Back to all Castles", properties_path, style:'back-to-link' %>
+</div>
