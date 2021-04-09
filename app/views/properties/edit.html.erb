@@ -1,6 +1,9 @@
-<h1>Editing Your Castle Informations</h1>
+<h1 class="castle-edit-title">Edit your Castle Informations</h1>
 
 <%= render 'form', property: @property %>
 
-<%= link_to 'Show', @property %> |
-<%= link_to 'Back', properties_path %>
+<div class="property-edit-links text-center">
+  <%= link_to 'Show', @property, class: :link %> |
+  <%= link_to 'Back', properties_path, class: :link %>
+</div>
+

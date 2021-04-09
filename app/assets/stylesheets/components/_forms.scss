@@ -9,7 +9,8 @@
   padding: 25px 40px;
   text-align: center;
   color: #c15522;
-  margin: 100px auto;
+  margin: 60px auto;
+  font-size: 18px;
 }
 
 .form-control {
@@ -43,7 +44,7 @@ input.btn-block[type="submit"] {
   color: #c15522 !important;
 }
 
-// Links to Log In or Register
+// Links in Castlevania
 .castlevania-form > a {
   color: #c15522;
   text-decoration: none;
@@ -55,21 +56,32 @@ input.btn-block[type="submit"] {
   font-size: larger;
 }
 
-// Adding a property form
-.form-control-file {
-  font-style: italic;
-}
-
+// File button
 .btn-file {
-  background-color: #c15522f7;
+  color: #c15522f7;
+  background-color: white;
+  margin-top: 20px;
   border-radius: 5px;
   border: 1px solid #ad410e;
 }
 
 .btn-file:hover {
-  background-color: #ad410e;
+  color: #c15522f7;
   border: 1px solid #ad410e;
+  background-color: white;
   font-size: large;
+}
+
+// Edit Castle titel
+.castle-edit-title {
+  color: #c15522;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: italic;
+}
+
+.form-labels {
+  font-size: 22px;
 }
 
 
