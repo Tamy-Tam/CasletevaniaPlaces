@@ -1,4 +1,5 @@
 // var nice-orange = #e67e22, #f07338 #c15522 #f07338cc;
+// fantastic color : #dd991eb5
 
 // Sign UP & Register Form
 .castlevania-form {
@@ -84,5 +85,7 @@ input.btn-block[type="submit"] {
   font-size: 22px;
 }
 
-
+.form-control:valid, .form-control.is-valid {
+  border-color: #dd991eb5;
+}
 
