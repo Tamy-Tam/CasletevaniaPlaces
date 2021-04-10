@@ -17,3 +17,38 @@
   color: black;
 }
 
+.link {
+  color: #c15522;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.link:hover {
+  color: #ad410e;
+  font-size: larger;
+}
+
+.index_link {
+  color: #c15522;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #c15522;
+  border-radius: 100px;
+  margin: 5px;
+  width: auto;
+  max-width: 250px;
+  padding: 10px 30px;
+  opacity: 0.8;
+}
+
+.index_link:hover {
+  color: #ad410e;
+  font-size: larger;
+}
+
+.button_to {
+  text-align: right;
+}
+
+
+
