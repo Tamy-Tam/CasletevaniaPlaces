@@ -1,4 +1,5 @@
 // var nice-orange = #e67e22, #f07338 #c15522 #f07338cc;
+// fantastic color : #dd991eb5
 
 // Sign UP & Register Form
 .castlevania-form {
@@ -10,7 +11,7 @@
   text-align: center;
   color: #c15522;
   margin: 60px auto;
-  font-size: 18px;
+  font-size: x-large;
 }
 
 .form-control {
@@ -36,7 +37,7 @@
 
   // width of login button
 input.btn-block[type="submit"] {
-  width: 50%;
+  width: 55%;
 }
 
 // 6 charcters minimum
@@ -78,11 +79,14 @@ input.btn-block[type="submit"] {
   text-align: center;
   margin-top: 30px;
   font-weight: italic;
+  font-size: 58px;
 }
 
 .form-labels {
-  font-size: 22px;
+  font-size: 70px;
 }
 
-
-
+// form borders
+.form-control.is-valid {
+  border-color: #dd991eb5;
+}

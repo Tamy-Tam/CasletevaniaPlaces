@@ -42,9 +42,11 @@
               <%= link_to "Show me this place", "properties/#{castle.id}", class:"button-card" %>
               <% if policy(castle).edit? %>
               <tr>
-                <td><%= link_to "Update", edit_property_path(castle), class: :link %></td>
-                <td><%= link_to 'Destroy', @property, method: :delete, data: { confirm: 'Are you sure?' }, class: :link %></td>
-            <% end %>
+              <div class="index-links">
+                <td><%= button_to "Update", edit_property_path(castle), class: :index_link %></td>
+                <td><%= button_to 'Destroy', @property, method: :delete, data: { confirm: 'Are you sure?' }, class: :index_link, style: { 'text-align': :right } %></td>
+              </div>
+              <% end %>
               </tr>
           </li>
         <% end %>
