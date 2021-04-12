@@ -2,14 +2,14 @@
   <div class="container-fluid">
     <div class="photos text-center">
       <% @property.photos.each do |photo| %>
-        <%= cl_image_tag photo.key, height: 320, width: 460, crop: :fill %>
+        <%= cl_image_tag photo.key, height: 320, width: 460, crop: :fill, class: :"img-castle" %>
       <% end %>
     </div>
 
     <div class="container p-3 mb-5 bg-white custom-container shadow-sm text-center">
       <h1><%= @property.name  %> </h1>
       <p><%= @property.address %></p>
-      <p class="price-tag"><%= @property.price %>€</p>
+      <p class="price-tag"><%= @property.price %><small>€/Night</small></p>
     </div>
 
     <div class="links">
